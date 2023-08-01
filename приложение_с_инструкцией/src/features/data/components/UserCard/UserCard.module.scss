@@ -1,0 +1,24 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .userLogo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .fullName {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  .groupName {
+    font-weight: 400;
+  }
+  .groupNameUnnamed {
+    font-weight: 900;
+  }
+  .phone {
+
+  }
+}

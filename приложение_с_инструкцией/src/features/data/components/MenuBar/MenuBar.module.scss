@@ -1,0 +1,76 @@
+@import "/src/theme";
+
+.appBar {
+  & > :global(.MuiContainer-root) {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .selectWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    .menuBarSelect {
+      color: white;
+      border-color: white;
+      box-shadow: none;
+
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border: 0;
+      }
+    }
+  }
+
+  .spacer {
+    flex-shrink: 1.5;
+  }
+
+  .searchInputWrapper {
+    padding: 0 16px;
+    position: relative;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    marginLeft: 0;
+    width: 100%;
+    transition: background-color 0.5s;
+    @media screen and (min-width: $sm) {
+      margin-left: 8px;
+      width: auto;
+    }
+
+    .iconWrapper {
+      padding: 0;
+      height: 100%;
+      position: absolute;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    .searchInputBase {
+      color: inherit;
+
+      :global(.MuiInputBase-input) {
+        padding-left: calc(1em + 16px);
+        transition: width 300ms;
+        width: 100%;
+        @media screen and (min-width: $sm) {
+          width: 12ch;
+          &:focus {
+            width: 20ch;
+          }
+
+        }
+      }
+    }
+  }
+
+}

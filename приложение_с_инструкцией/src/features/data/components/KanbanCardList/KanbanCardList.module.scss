@@ -1,0 +1,31 @@
+.cardListWrapper {
+  margin-right: 25px;
+
+  .container {
+    min-width: 200px;
+    border-radius: 3px;
+    background: #EBECF0;
+    min-height: 300px;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .userCard {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background: #FFF;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
+    border-radius: 3px;
+    padding: 10px;
+
+    .userName {
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+
+  }
+}
